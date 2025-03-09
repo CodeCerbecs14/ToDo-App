@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+.app{
+    background-image: url(./pexels-artempodrez-7233376.jpg);
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items:start;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.todoApp{
+    width: 100%;
+    max-width: 540px;
+    background:#fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todoApp h2{
+   color: #002765;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px; 
+   text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0;
+    border-radius:30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.text{
+    flex:1 ;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.add{
+    border:none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:  40px;
+}
+
+#list-cont li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+}
+
+#list-cont li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(unchecked.png);
+    background-size:cover;
+    background-position: center;
+    top:11px;
+    left: 8px;
+}
+
+
+#list-cont li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    color: rgba(9, 240, 105, 0.7);
+    line-height: 40px;
+    text-align: center;
+    border-radius:50%;
+    back
+}
+
+#list-cont li span:hover{
+    background:#edeef0;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-color: #3963b9;
+    background-image: url(checked.png)!important;
+    
+}
+
+@media (max-width: 600px) {
+    .todoApp {
+        padding: 20px;
+    }
+    .add {
+        padding: 12px 30px;
+    }
+}
+
+
+/* .logo{
+    margin: 30px 20px;
+    width: 60%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    height: 1.9rem;
+    width: inherit;
+    text-align: center;
+    text-decoration: 2px black underline;
+} */
